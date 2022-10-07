@@ -1,0 +1,22 @@
+.header-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  background: #ffffff;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    width: auto;
+
+    img {
+      margin-right: 10px;
+    }
+
+    cursor: pointer;
+  }
+}
