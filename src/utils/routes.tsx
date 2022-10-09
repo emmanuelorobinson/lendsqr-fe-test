@@ -1,26 +1,25 @@
-import {
-  AiOutlineDashboard,
-  AiOutlineUser,
-  AiOutlineUsergroupAdd,
-} from "react-icons/ai";
+
+import Home from '../assets/svgs/sidebar/Home.svg';
+import Users from '../assets/svgs/sidebar/Users.svg';
+import UsersGuarantors from '../assets/svgs/sidebar/UsersGuarantors.svg';
 
 const color = "#213F7D";
 
 export const dashboardRoutes = {
   path: "/dashboard",
   name: "Dashboard",
-  icon: <AiOutlineDashboard color={color} />,
+  icon: Home,
 };
 
 export const customerRoutes = [
   {
     path: "/users",
     name: "Users",
-    icon: <AiOutlineUser color={color} />,
+    icon: Users,
   },
   {
     path: "/users",
     name: "Guarantors",
-    icon: <AiOutlineUsergroupAdd color={color} />,
+    icon: UsersGuarantors,
   },
 ];

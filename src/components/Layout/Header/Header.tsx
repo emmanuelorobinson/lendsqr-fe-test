@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Header.scss"
 
+import { Link } from "react-router-dom";
+
 import Search from '../Search/Search'
 import NavUser from '../NavUser/NavUser'
 
@@ -9,6 +11,7 @@ import Lendsqr from "../../../assets/svgs/Lendsqr.svg"
 
 const Header = () => {
   return (
+    <Link to="/">
     <div className='header-box'>
       <div className='header-logo'>
         <img src={Union} alt="union" />
@@ -21,6 +24,7 @@ const Header = () => {
         <NavUser></NavUser>
       </div>
     </div>
+    </Link>
   )
 }
 
