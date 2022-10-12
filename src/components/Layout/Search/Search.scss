@@ -1,5 +1,6 @@
 .search-box {
   /* Rectangle 8 */
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
 
@@ -13,14 +14,18 @@
   .search-input {
     /* Rectangle 8 */
 
+    box-sizing: border-box;
+
     input {
       width: 344px;
       height: 100%;
       border: none;
       outline: none;
       
+      // push text to the right while making sure it doesnt push right items out of the box
+      padding-left: 1rem;
 
-      padding-left: 20px;
+
       background: transparent;
       
       
@@ -28,6 +33,7 @@
   }
 
   .search-icon {
+    box-sizing: border-box;
     display: flex;
     
     justify-content: center;

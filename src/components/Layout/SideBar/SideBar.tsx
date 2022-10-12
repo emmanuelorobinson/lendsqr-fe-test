@@ -3,7 +3,7 @@ import React from "react";
 
 import { dashboardRoutes, customerRoutes } from "../../../utils/routes";
 
-import { FaSuitcase, FaHome } from "react-icons/fa";
+import Briefcase from '../../../assets/svgs/sidebar/Briefcase.svg';
 import { RiArrowDropDownLine } from "react-icons/ri";
 import SideBarItem from "../SideBarItem/SideBarItem";
 
@@ -11,18 +11,16 @@ const SideBar = () => {
   return (
     <div className="sidebar-box">
       <div className="sidebar-top">
-        <FaSuitcase color="#213F7D" />
+        <img src={Briefcase} alt="" />
         <p>Switch Organization</p>
         <RiArrowDropDownLine color="#213F7D" size={25} />
       </div>
       <div className="sidebar-dash">
-        <FaHome
-          color="#213F7D"
-          style={{
-            marginRight: "10px",
-          }}
+        <SideBarItem
+          path={dashboardRoutes.path}
+          name={dashboardRoutes.name}
+          icon={dashboardRoutes.icon}
         />
-        <p>Dashboard</p>
       </div>
       <div className="sidebar-list">
         <p className="sidebar-text">CUSTOMERS</p>
