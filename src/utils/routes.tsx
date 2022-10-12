@@ -6,7 +6,7 @@ import UsersGuarantors from '../assets/svgs/sidebar/UsersGuarantors.svg';
 const color = "#213F7D";
 
 export const dashboardRoutes = {
-  path: "/dashboard",
+  path: "/users",
   name: "Dashboard",
   icon: Home,
 };

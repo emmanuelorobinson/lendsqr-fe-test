@@ -2,6 +2,7 @@ export interface User {
   createdAt: string;
   orgName: string;
   userName: string;
+  email: string;
   phoneNumber: string;
   lastActiveDate: string;
   profile: profile;
@@ -21,7 +22,7 @@ export interface profile {
   gender: string;
   bvn: string;
   address: string;
-  cuurency: string;
+  currency: string;
 }
 
 export interface guarantor {
