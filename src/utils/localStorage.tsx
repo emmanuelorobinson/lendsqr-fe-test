@@ -56,6 +56,12 @@ export const getUser = () => {
   return [];
 };
 
+export const getUserById = (id: number) => {
+  const users = getUser();
+  const user = users.find((user: User) => Number(user.id) === id);
+  return user;
+};
+
 export const setUsers = (users: User[]) => {
   localStorage.setItem("users", JSON.stringify(users));
 };

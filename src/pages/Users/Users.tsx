@@ -17,7 +17,7 @@ const Users = () => {
     "https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/";
 
   // use interface User to create array of objects
-  const [users, setUsers] = useState<User[]>([]);
+  const [users, fillUsers] = useState<User[]>([]);
 
 
 
@@ -27,14 +27,15 @@ const Users = () => {
       const response = await fetch(url);
       const data = await response.json();
       setUsers(data);
+      fillUsers(data);
     };
 
     try {
       fetchUsers();
-      setUsers(users);
     } catch (error) {
       console.log(error);
     }
+
 
   }, []);
 

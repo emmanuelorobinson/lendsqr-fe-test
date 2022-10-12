@@ -4,6 +4,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Users from "./pages/Users/Users";
+import UserDetails from "./pages/UserDetails/UserDetails";
 import Layout from "./components/Layout/Layout";
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           >
             <Route path="/" element={<Dashboard />} />
             <Route path="/users" element={<Users />} />
-            <Route path="/users/*" element={<Outlet />} />
+            <Route path="/users/:id" element={<UserDetails />} />
           </Route>
         </Routes>
       </BrowserRouter>
