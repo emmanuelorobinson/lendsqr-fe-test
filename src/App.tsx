@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Users from "./pages/Users/Users";
 import UserDetails from "./pages/UserDetails/UserDetails";
+import Login from "./pages/Login/Login";
 import Layout from "./components/Layout/Layout";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+          <Route path="/login" element={<Login />} />
           <Route
             path="/"
             element={
