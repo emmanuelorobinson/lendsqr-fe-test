@@ -9,7 +9,7 @@ import DashLoans from "../../assets/svgs/DashLoans.svg";
 import DashSavings from "../../assets/svgs/DashSavings.svg";
 
 import UserCard from "../../components/Cards/UserCard";
-
+import UserTable from "../../components/UserTable/UserTable";
 
 
 const Users = () => {
@@ -48,6 +48,9 @@ const Users = () => {
       <UserCard icon={DashActive} title={"Active Users"} amount={"2,453"} ></UserCard>
       <UserCard icon={DashLoans} title={"Users with Loans"} amount={"2,453"} ></UserCard>
       <UserCard icon={DashSavings} title={"Users with Savings"} amount={"2,453"} ></UserCard>
+    </div>
+    <div className="user-table">
+      <UserTable users={users} />
     </div>
   </div>;
 };
